@@ -4,6 +4,8 @@ A vite plugin loader for virtual paths with resolvers.
 
 Use `import name from '~virtual/source'` to include a non existant content that is loaded and transformed with a resolver.
 
+V2 supports vite 4+. For previous vite version use vite-plugin-virtual-resource@1.0.1
+
 ##### Example
 
 You need to include a svg icon from [iconify icons framework](https://iconify.design/).
@@ -12,15 +14,11 @@ The raw-data comes from [@iconify-json](https://github.com/iconify/collections-j
 
 It can resolve any resource, not only icons.
 
-
-
 ## Install
 
 ```sh
 npm install --save-dev @inveris/vite-plugin-virtual-resource
 ```
-
-
 
 ## Usage
 
@@ -41,15 +39,13 @@ export default defineConfig({
 
 Without any options, virtual-resource uses a builtin resolver to include [@iconify-json](https://github.com/iconify/collections-json) icon files and let you use it with `import SomeIcon from '~/icon/PACKAGE/ICON_NAME'`.
 
-
-##### Example with default resolver (works with any framework: react, vue, svelte, ...):
+##### Example with default resolver (works with any framework: react, vue, svelte, ...)
 
 ```js
 import CloseIcon from '~icon/mdi/close-circle-outline'
 
 <Icon src={CloseIcon} />
 ```
-
 
 ### With virtual and custom resolver
 
@@ -106,8 +102,6 @@ import MyIcon from '~myicon/loading'
 <Icon src={HelpIcon} />
 <Icon src={MyIcon} />
 ```
-
-
 
 ## FAQ
 
