@@ -1,6 +1,6 @@
 {
   "name": "@inveris/vite-plugin-virtual-resource",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "A vite plugin loader for virtual paths with resolvers.",
   "author": "Peter Rottmann <rottmann@inveris.de>",
   "license": "MIT",
@@ -9,23 +9,13 @@
     "type": "git",
     "url": "https://github.com/inverisOSS/vite-plugin-virtual-resource.git"
   },
-  "keywords": [
-    "vite",
-    "vite-plugin",
-    "plugin",
-    "loader",
-    "resolve",
-    "resolver",
-    "virtual"
-  ],
+  "keywords": ["vite", "vite-plugin", "plugin", "loader", "resolve", "resolver", "virtual"],
   "main": "dist/index.js",
   "module": "dist/index.mjs",
   "engines": {
-    "node": ">=12.0.0"
+    "node": ">=14.18.0"
   },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "types": "./dist",
   "scripts": {
     "dev": "npm run test:watch test/plugin.test.ts",
@@ -35,26 +25,26 @@
     "test:watch": "nodemon -w src -w test -e ts --exec \"TS_NODE_PROJECT=\"tsconfig.dev.json\" TS_NODE_TRANSPILE_ONLY=true mocha -r ts-node/register --timeout 5000 --bail\""
   },
   "devDependencies": {
-    "@iconify-json/mdi": "^1.1.6",
-    "@types/chai": "^4.3.0",
-    "@types/mocha": "^9.1.0",
-    "@types/node": "^17.0.23",
+    "@iconify-json/mdi": "^1.1.54",
+    "@types/chai": "^4.3.6",
+    "@types/mocha": "^10.0.2",
+    "@types/node": "^20.8.2",
     "@types/rollup": "^0.54.0",
-    "@typescript-eslint/eslint-plugin": "^5.17.0",
-    "@typescript-eslint/parser": "^5.17.0",
-    "chai": "^4.3.6",
-    "eslint": "^8.12.0",
-    "eslint-config-standard": "^16.0.3",
-    "eslint-plugin-import": "^2.25.4",
+    "@typescript-eslint/eslint-plugin": "^6.7.4",
+    "@typescript-eslint/parser": "^6.7.4",
+    "chai": "^4.3.10",
+    "eslint": "^8.50.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-storybook": "^0.5.7",
-    "eslint-plugin-svelte3": "^3.4.1",
-    "mocha": "^9.2.2",
-    "nodemon": "^2.0.15",
-    "ts-node": "^10.7.0",
-    "tsup": "^5.12.1",
-    "typescript": "^4.6.3",
-    "vite": "^2.9.0"
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-storybook": "^0.6.14",
+    "eslint-plugin-svelte3": "^4.0.0",
+    "mocha": "^10.2.0",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.10"
   }
 }
