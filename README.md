@@ -64,7 +64,7 @@ export default defineConfig({
 
         // builtin (long form)
         '~otherIconPackage/': {
-          source: 'node_modules/@iconify-json/${1}/icons.json',
+          source: 'node_modules/@iconify/json/json/${1}.json',
           match: /^.*?\/(.*?)\/(.*?)$/,
           resolver: resolver.iconify
         }
